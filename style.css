@@ -18,6 +18,7 @@ body {
     background-color: var(--light-gray);
     font-family: "Karla", sans-serif;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 /* ===========================================
