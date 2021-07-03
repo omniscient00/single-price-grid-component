@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsla(179, 62%, 43%, 0.6);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%); /* background clr */
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+/* ===========================================
+            MAIN
+============================================== */
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 20px 50px;
+}
+
+.grid {
+    width: 350px;
+    padding: 30px;
+}
+
+.grid h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* ================
+    GRID 1 
+=================== */
+.grid-1 {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-1 h1 {
+    color: var(--cyan);
+}
+
+.grid-1-text-1 {
+    color: var(--bright-yellow);
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.grid-1-text-2 {
+    color: var(--grayish-blue);
+    line-height: 1.7em;
+    max-width: 90%;
+}
+
+
+
+/* ================
+    GRID 2
+=================== */
+.grid-2 {
+    background-color: var(--cyan);
+    padding-bottom: 50px;
+}
+
+.grid-2 h1 {
+    color: white;
+}
+
+.grid-2-text-1 {
+    margin-bottom: 15px;
+}
+
+.price {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 700;
+    padding-right: 8px;
+}
+
+.per-month {
+    color: var(--light-gray);
+    opacity: 0.6;
+}
+
+.grid-2-text-2 {
+    opacity: 0.95;
+    color: var(--light-gray);
+    margin-bottom: 45px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: var(--bright-yellow);
+    padding: 15px 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.342);
+}
+
+/* ================
+    GRID 3
+=================== */
+.grid-3 {
+    background-color: var(--light-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.grid-3 ul {
+    list-style: none;
+}
+
+.grid-3 h1 {
+    color: white;
+}
+
+.grid-3 li {
+    color: var(--light-gray);
+    opacity: 0.8;
+    padding-bottom: 5px;
+}
+
+
+
+/* ===========================================
+            FOOTER (ATTRIBUTIONS)
+============================================== */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+/* ===========================================
+            MEDIA QUERY
+============================================== */
+
+@media (min-width: 1000px) {
+
+    body {
+        margin-bottom: 10px;
+    }
+
+    /* ================
+        GRID 1 & 2
+    =================== */
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* ================
+        GRID 1 
+    =================== */
+
+    .grid-1 {
+        width: 700px;
+    }
+
+    .grid-1-text-2 {
+        margin-bottom: 20px;
+    }
+
+    /* ================
+        GRID 2
+    =================== */
+
+    .grid-2 {
+        border-radius: 0 0 0 10px;
+    }
+
+    /* ================
+        GRID 3
+    =================== */
+
+    .grid-3 {
+        border-radius: 0 0 10px 0;
+    }
+
+}
